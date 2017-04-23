@@ -1,0 +1,83 @@
+/*=========================VARIABLES==================*/
+* {
+  font-family: "Ubuntu"; }
+
+a {
+  color: #000; }
+
+a:hover {
+  border: 3px solid #000;
+  font-style: none;
+  color: #000; }
+
+/*=========================/VARIABLES==================*/
+header {
+  background-color: #FFD800;
+  background-image: url(../img/header_bgr.jpg);
+  min-height: 132px;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 9999;
+  max-height: 13vh; }
+
+div.col-md-12.header {
+  padding: 0 0; }
+
+div.table {
+  height: 132px;
+  display: table; }
+
+div.table2 {
+  height: 66px;
+  display: table; }
+
+div.tableCell {
+  display: table-cell;
+  vertical-align: middle; }
+
+.img_logo {
+  width: 200px;
+  display: block;
+  margin: auto; }
+
+.location {
+  font-weight: 900;
+  font-size: 23px;
+  text-align: center;
+  padding-top: 10px;
+  padding-left: 10px; }
+
+.phones {
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center; }
+
+.options {
+  font-size: 20px;
+  padding: 10px 20px;
+  text-align: center; }
+
+p.options.rental {
+  color: #fff;
+  text-align: center;
+  font-weight: lighter; }
+
+/*=========================END OF HEADER==================*/
+@media only screen and (max-width: 1230px) {
+  .phones {
+    font-weight: bold;
+    font-size: 20px; }
+  .options {
+    font-size: 20px; } }
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  header {
+    background-color: #ffd800;
+    background-image: none;
+    max-height: none;
+    font-size: 20px; } }
+
+/* Small Devices, Tablets */
+/* Small Devices, Tablets */
+/* Extra Small Devices, Phones */

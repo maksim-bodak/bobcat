@@ -1,0 +1,123 @@
+/*=========================VARIABLES==================*/
+$yellow: #ffd800;
+$featuresfontsize: 35px;
+$headerfontsize: 35px;
+$fs20: 20px;
+$fs25: 25px;
+$fs30: 30px;
+$fs35: 35px;
+$fs40: 40px;
+$fs50: 50px;
+$U: 'Ubuntu';
+
+*{
+    font-family: $U;
+}
+
+a{
+    color: #000;
+}
+
+a:hover{
+    border: 3px solid #000;
+    font-style: none;
+    color: #000;
+}
+/*=========================/VARIABLES==================*/
+header{
+    background-color: #FFD800;
+    background-image: url(../img/header_bgr.jpg);
+    //background-size:100% 132px;
+    min-height: 132px;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 9999;
+    max-height: 13vh;
+}
+
+
+div.col-md-12.header{
+    padding: 0 0;
+}
+
+div.table{
+    height: 132px;
+    display: table;
+}
+div.table2{
+    height: 66px;
+    display: table;
+}
+
+div.tableCell{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.img_logo{
+    width: 200px;
+    display: block;
+    margin: auto;
+}
+
+.location{
+    font-weight: 900;
+    font-size: 23px;
+    text-align: center;
+    padding-top:10px;
+    padding-left: 10px;
+}
+
+.phones{
+    font-weight: bold;
+    font-size: $fs25;
+    text-align: center;
+}
+
+.options{
+    font-size: $fs20;
+    padding: 10px 20px;
+    text-align: center;   
+}
+
+p.options.rental{
+        color: #fff;
+        text-align: center;
+        font-weight: lighter;
+}
+
+
+/*=========================END OF HEADER==================*/
+
+@media only screen and (max-width : 1230px) {
+    .phones{
+        font-weight: bold;
+        font-size: $fs20;
+    }
+    .options{
+        font-size: $fs20;
+    }
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+ header{
+            background-color: $yellow;
+            background-image: none;
+            max-height: none;
+            font-size: $fs20
+
+        }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 600px) {
+    
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    }
