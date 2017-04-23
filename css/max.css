@@ -14,21 +14,23 @@ a:hover {
 header {
   background-color: #FFD800;
   background-image: url(../img/header_bgr.jpg);
-  min-height: 132px;
+  background-size: 100% 100%;
+  min-height: 17vh;
   background-position: center;
   background-repeat: no-repeat;
   z-index: 9999;
-  max-height: 13vh; }
+  height: 17vh; }
 
 div.col-md-12.header {
-  padding: 0 0; }
+  padding: 0 0;
+  height: 17vh; }
 
 div.table {
-  height: 132px;
+  height: 17vh;
   display: table; }
 
 div.table2 {
-  height: 66px;
+  height: 8.5vh;
   display: table; }
 
 div.tableCell {
@@ -36,47 +38,44 @@ div.tableCell {
   vertical-align: middle; }
 
 .img_logo {
-  width: 200px;
+  width: 13vw;
   display: block;
   margin: auto; }
 
 .location {
   font-weight: 900;
-  font-size: 23px;
+  font-size: 1.5vw;
   text-align: center;
   padding-top: 10px;
   padding-left: 10px; }
 
 .phones {
   font-weight: bold;
-  font-size: 25px;
+  font-size: 1.725vw;
   text-align: center; }
 
+div.row.headerWidth {
+  height: 17vh; }
+
 .options {
-  font-size: 20px;
+  font-size: 1.25vw;
   padding: 10px 20px;
-  text-align: center; }
+  text-align: center;
+  font-weight: bold; }
 
 p.options.rental {
   color: #fff;
   text-align: center;
-  font-weight: lighter; }
+  font-weight: 100;
+  box-sizing: border-box; }
 
 /*=========================END OF HEADER==================*/
-@media only screen and (max-width: 1230px) {
-  .phones {
-    font-weight: bold;
-    font-size: 20px; }
-  .options {
-    font-size: 20px; } }
-
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
   header {
     background-color: #ffd800;
     background-image: none;
-    max-height: none;
-    font-size: 20px; } }
+    max-height: none; } }
 
 /* Small Devices, Tablets */
 /* Small Devices, Tablets */

@@ -1,13 +1,8 @@
 /*=========================VARIABLES==================*/
 $yellow: #ffd800;
-$featuresfontsize: 35px;
-$headerfontsize: 35px;
-$fs20: 20px;
-$fs25: 25px;
-$fs30: 30px;
-$fs35: 35px;
-$fs40: 40px;
-$fs50: 50px;
+
+$hsm: 1.25vw; //Header small
+$hb: 1.5vw;
 $U: 'Ubuntu';
 
 *{
@@ -27,25 +22,26 @@ a:hover{
 header{
     background-color: #FFD800;
     background-image: url(../img/header_bgr.jpg);
-    //background-size:100% 132px;
-    min-height: 132px;
+    background-size:100% 100%;
+    min-height: 17vh;
     background-position: center;
     background-repeat: no-repeat;
     z-index: 9999;
-    max-height: 13vh;
+    height: 17vh;
 }
 
 
 div.col-md-12.header{
     padding: 0 0;
+    height: 17vh;
 }
 
 div.table{
-    height: 132px;
+    height: 17vh;
     display: table;
 }
 div.table2{
-    height: 66px;
+    height: 8.5vh;
     display: table;
 }
 
@@ -55,14 +51,14 @@ div.tableCell{
 }
 
 .img_logo{
-    width: 200px;
+    width: 13vw;
     display: block;
     margin: auto;
 }
 
 .location{
     font-weight: 900;
-    font-size: 23px;
+    font-size: $hb;
     text-align: center;
     padding-top:10px;
     padding-left: 10px;
@@ -70,33 +66,33 @@ div.tableCell{
 
 .phones{
     font-weight: bold;
-    font-size: $fs25;
+    font-size: $hb*1.15;
     text-align: center;
 }
 
+div.row.headerWidth{
+    height: 17vh;
+}
+
 .options{
-    font-size: $fs20;
+    font-size: $hsm;
     padding: 10px 20px;
-    text-align: center;   
+    text-align: center;
+    font-weight: bold;   
 }
 
 p.options.rental{
         color: #fff;
         text-align: center;
-        font-weight: lighter;
+        font-weight: 100;
+        box-sizing: border-box;
 }
+
 
 
 /*=========================END OF HEADER==================*/
 
 @media only screen and (max-width : 1230px) {
-    .phones{
-        font-weight: bold;
-        font-size: $fs20;
-    }
-    .options{
-        font-size: $fs20;
-    }
 }
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
@@ -104,7 +100,6 @@ p.options.rental{
             background-color: $yellow;
             background-image: none;
             max-height: none;
-            font-size: $fs20
 
         }
 }
@@ -120,4 +115,4 @@ p.options.rental{
 }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-    }
+ }
