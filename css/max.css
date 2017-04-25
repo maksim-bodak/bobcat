@@ -6,7 +6,7 @@ a {
   color: #000; }
 
 a:hover {
-  border: 3px solid #000;
+  border: none;
   font-style: none;
   color: #000; }
 
@@ -31,6 +31,10 @@ div.table {
 
 div.table2 {
   height: 8.5vh;
+  display: table; }
+
+div.table3 {
+  height: 83vh;
   display: table; }
 
 div.tableCell {
@@ -63,6 +67,9 @@ div.row.headerWidth {
   text-align: center;
   font-weight: bold; }
 
+.options:hover {
+  border: 6px solid #000; }
+
 p.options.rental {
   color: #fff;
   text-align: center;
@@ -70,6 +77,48 @@ p.options.rental {
   box-sizing: border-box; }
 
 /*=========================END OF HEADER==================*/
+.page1 {
+  height: 83vh; }
+
+.images1page {
+  width: 85%; }
+
+div.page1 > .row > .col-md-4 > div {
+  text-align: center;
+  margin: auto;
+  display: block;
+  margin-bottom: 0; }
+
+div.col-md-12.images1PageSircle {
+  width: 20vw;
+  height: 20vw;
+  background-color: #ffd800;
+  border-radius: 100%; }
+
+div.col-md-12.images1PageSircle > a {
+  display: table;
+  text-align: center;
+  position: relative;
+  height: 100%; }
+
+div.col-md-12.images1PageSircle > a > div {
+  display: table-cell;
+  vertical-align: middle; }
+
+div.col-md-4.page1cols {
+  display: flex;
+  flex-direction: column;
+  height: 84vh; }
+
+div.col-md-4 .page1cols:nth-child(1) {
+  margin-bottom: 0; }
+
+div.col-md-4 .page1cols:nth-child(2) {
+  margin-top: 0; }
+
+#mainTextPage1 > div {
+  margin: auto; }
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
   header {
