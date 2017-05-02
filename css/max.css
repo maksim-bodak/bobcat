@@ -1,6 +1,11 @@
-/*=========================VARIABLES==================*/
+/* Header small */
+/* Header big */
+/* first screen big */
 * {
   font-family: "Ubuntu"; }
+
+div.container-fluid {
+  padding: 0; }
 
 a {
   color: #000; }
@@ -10,7 +15,6 @@ a:hover {
   font-style: none;
   color: #000; }
 
-/*=========================/VARIABLES==================*/
 header {
   background-color: #FFD800;
   background-image: url(../img/header_bgr.jpg);
@@ -19,7 +23,21 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   z-index: 9999;
+  height: 17vh;
+  width: 100%;
+  position: fixed; }
+
+.headerHeigh {
   height: 17vh; }
+
+.headerHeighOptions {
+  height: 8.5vh; }
+
+div.alignVH {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
 
 div.col-md-12.header {
   padding: 0 0;
@@ -59,35 +77,42 @@ div.tableCell {
   text-align: center; }
 
 div.row.headerWidth {
-  height: 17vh; }
+  height: 17vh;
+  min-height: 100px; }
 
 .options {
   font-size: 1.25vw;
   padding: 10px 20px;
   text-align: center;
-  font-weight: bold; }
+  font-weight: bold;
+  border: 3px solid transparent; }
 
 .options:hover {
-  border: 6px solid #000; }
+  border: 3px solid #000; }
 
-p.options.rental {
+p.optionsRental {
   color: #fff;
   text-align: center;
   font-weight: 100;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-size: 1.2vw; }
 
-/*=========================END OF HEADER==================*/
-.page1 {
+.optionsRentalSVG {
+  width: 15%;
+  padding-left: 30px;
+  padding-right: 30px; }
+
+/*==END OF HEADER==*/
+.page {
   height: 83vh; }
 
 .images1page {
   width: 85%; }
 
-div.page1 > .row > .col-md-4 > div {
+div.page > .row > .col-md-4 > div {
   text-align: center;
   margin: auto;
-  display: block;
-  margin-bottom: 0; }
+  display: block; }
 
 div.col-md-12.images1PageSircle {
   width: 20vw;
@@ -95,29 +120,183 @@ div.col-md-12.images1PageSircle {
   background-color: #ffd800;
   border-radius: 100%; }
 
+div.col-md-12.images1PageSircle:hover {
+  background-color: #fff;
+  border: 6px solid #ffd800; }
+
 div.col-md-12.images1PageSircle > a {
-  display: table;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   position: relative;
   height: 100%; }
 
-div.col-md-12.images1PageSircle > a > div {
-  display: table-cell;
-  vertical-align: middle; }
+div.col-md-12.images1PageSircle a p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.68vw;
+  margin-top: 5%; }
 
 div.col-md-4.page1cols {
   display: flex;
   flex-direction: column;
   height: 84vh; }
 
-div.col-md-4 .page1cols:nth-child(1) {
-  margin-bottom: 0; }
-
-div.col-md-4 .page1cols:nth-child(2) {
-  margin-top: 0; }
-
 #mainTextPage1 > div {
+  margin-top: 30%; }
+
+#mainTextPage1 > div > p,
+#mainTextPage1 > div > a {
+  font-size: 2.1vw; }
+
+#mainTextPage1 > div > a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffd800;
+  border-radius: 50px;
+  width: 70%;
+  height: 10vh;
+  margin: auto;
+  margin-top: 15%;
+  font-size: 1.89vw;
+  font-weight: 700; }
+
+#mainTextPage1 > div > a:hover {
+  border: 6px solid #ffd800;
+  background-color: #fff; }
+
+div.col-md-12.aboutTextPage1 a p {
+  font-size: 1.365vw;
+  border: 6px solid #ffd800;
+  border-radius: 10px;
+  width: 50%;
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  background-color: #ffd800; }
+
+div.col-md-12.aboutTextPage1 a p:hover {
+  border: 6px solid #ffd800;
+  background-color: #fff; }
+
+div.aditional.first {
+  height: 23vh;
+  background-color: #ffd800;
+  width: 100%; }
+
+div.aditional.first div p {
+  height: 23vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4.5vh;
+  font-weight: bold;
+  text-align: center; }
+
+div.mainPage {
+  height: 83vh; }
+
+.div2and3page {
+  height: 83vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.name2and3page {
+  font-size: 6.75vh;
+  text-align: center;
+  margin-bottom: 7vh; }
+
+.image2and3page {
+  width: 100%;
+  padding: 0 5%; }
+
+div.topOptions,
+div.bottomOptions {
+  padding-top: 5vh;
+  font-size: 2.925vh;
+  text-align: center; }
+
+.advertisementText {
+  padding-top: 5vh;
+  font-weight: bold; }
+
+.advertisementImages {
+  width: 100%; }
+
+.bottomOptions {
+  margin-top: 25vh; }
+
+div.mainPage.row > div {
+  padding: 0; }
+
+ul {
+  list-style-type: none; }
+
+.optionsList > li {
+  font-size: 1.575vw;
+  padding-top: 2vh; }
+
+.optionsList li > i {
+  color: #ffd800; }
+
+.optionsPic {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(50%); }
+
+div.col-md-12.caption > p {
+  font-size: 6.75vh;
+  text-align: center;
+  padding-top: 10vh;
+  padding-bottom: 10vh; }
+
+div.col-md-6 > .price {
+  height: 35vh;
+  text-align: center;
+  font-size: 1.68vw;
+  background-color: #ffd800;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+
+p.specialOffer {
+  font-size: 1.68vw !important; }
+
+div.col-md-12.last {
+  text-align: center;
+  padding-top: 5vh; }
+
+footer {
+  height: 17vh;
+  background-color: #000;
+  color: #fff; }
+
+div.col-md-4.footerCols {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 3vh; }
+
+div.col-md-4.footerCols > p {
+  font-size: 1.26vw;
+  text-align: center;
   margin: auto; }
+
+p.author {
+  margin-top: 3.5vh !important; }
+
+p.author > a {
+  color: #fff; }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {

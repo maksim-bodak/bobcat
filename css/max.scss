@@ -1,0 +1,188 @@
+/*=========================VARIABLES==================*/
+$yellow: #ffd800;
+
+$hsm: 1.25vw; /* Header small */
+$hb: 1.5vw; /* Header big */
+$sc1b: 1.7vw;  /* first screen big */
+$U: 'Ubuntu';
+
+*{
+    font-family: $U;
+}
+
+a{
+    color: #000;
+}
+
+a:hover{
+    border: none;
+    font-style: none;
+    color: #000;
+}
+/*=========================/VARIABLES==================*/
+header{
+    background-color: #FFD800;
+    background-image: url(../img/header_bgr.jpg);
+    background-size:100% 100%;
+    min-height: 17vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 9999;
+    height: 17vh;
+}
+
+
+div.col-md-12.header{
+    padding: 0 0;
+    height: 17vh;
+}
+
+div.table{
+    height: 17vh;
+    display: table;
+}
+div.table2{
+    height: 8.5vh;
+    display: table;
+}
+div.table3{
+    height: 83vh;
+    display: table;
+}
+
+div.tableCell{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.img_logo{
+    width: 13vw;
+    display: block;
+    margin: auto;
+}
+
+.location{
+    font-weight: 900;
+    font-size: $hb;
+    text-align: center;
+    padding-top:10px;
+    padding-left: 10px;
+}
+
+.phones{
+    font-weight: bold;
+    font-size: $hb*1.15;
+    text-align: center;
+}
+
+div.row.headerWidth{
+    height: 17vh;
+}
+
+.options{
+    font-size: $hsm;
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: bold;   
+}
+.options:hover{
+    border: 6px solid #000;
+}
+
+p.options.rental{
+        color: #fff;
+        text-align: center;
+        font-weight: 100;
+        box-sizing: border-box;
+}
+
+
+
+/*=========================END OF HEADER==================*/
+.page1{
+    height: 83vh;
+}
+
+.images1page{
+    width: 85%;
+}
+
+div.page1 > .row > .col-md-4 > div{
+    text-align: center;
+    margin: auto;
+    display: block;
+    margin-bottom: 0;
+}
+
+div.page1 > .row > .col-md-4 > div:nth-child(2){
+    margin-top: 0;
+}
+
+div.col-md-12.images1PageSircle{
+    width: 20vw;
+    height: 20vw;
+    background-color: $yellow;
+    border-radius:100%;
+}
+
+div.col-md-12.images1PageSircle>a{
+    display: table;
+    text-align: center;
+    position: relative;
+    height: 100%;
+}
+
+div.col-md-12.images1PageSircle>a>div{
+    display: table-cell;
+    vertical-align: middle;
+}
+div.col-md-4.page1cols{
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+   // align-items: center;
+ height: 84vh;
+}
+
+div.col-md-4 .page1cols:nth-child(1){
+    margin-bottom: 0;
+}
+
+div.col-md-12 .aboutTextPage1{
+    margin-top: 0;
+}
+
+#mainTextPage1>div{
+    margin: auto;
+}
+
+#mainTextPage1>div>p,
+#mainTextPage1>div>a{
+    font-size: $sc1b;
+}
+
+
+@media only screen and (max-width : 1230px) {
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+ header{
+            background-color: $yellow;
+            background-image: none;
+            max-height: none;
+
+        }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 600px) {
+    
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+ }
