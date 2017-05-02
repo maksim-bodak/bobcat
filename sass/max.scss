@@ -24,12 +24,24 @@ a:hover{
     color: #000;
 }
 
+.row{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+a.anchor{
+  display: block;
+  height:17vh;
+  margin-top:-17vh;
+  visibility: hidden;
+}
+
 
 header{
     background-color: #FFD800;
     background-image: url(../img/header_bgr.jpg);
     background-size:100% 100%;
-    min-height: 17vh;
+    min-height: 100px;
     background-position: center;
     background-repeat: no-repeat;
     z-index: 9999;
@@ -40,10 +52,17 @@ header{
 
 .headerHeigh{
     height: 17vh;
+    min-height: 100px;
+}
+
+div.row.headerWidth{
+    height: 17vh;
+    min-height: 100px;
 }
 
 .headerHeighOptions{
     height: 8.5vh;
+    min-height: 50px;
 }
 
 div.alignVH{
@@ -56,24 +75,7 @@ div.alignVH{
 div.col-md-12.header{
     padding: 0 0;
     height: 17vh;
-}
-
-div.table{
-    height: 17vh;
-    display: table;
-}
-div.table2{
-    height: 8.5vh;
-    display: table;
-}
-div.table3{
-    height: 83vh;
-    display: table;
-}
-
-div.tableCell{
-    display: table-cell;
-    vertical-align: middle;
+    min-height: 100px;
 }
 
 .img_logo{
@@ -94,11 +96,6 @@ div.tableCell{
     font-weight: bold;
     font-size: $hb*1.15;
     text-align: center;
-}
-
-div.row.headerWidth{
-    height: 17vh;
-    min-height: 100px;
 }
 
 .options{
@@ -304,7 +301,7 @@ ul{
 
 
 .optionsPic{
-    width: 100%;
+    width: 90%;
     position: absolute;
     top: 50%;
     transform: translateY(50%);
